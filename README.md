@@ -15,6 +15,9 @@ Installation requirements include(not limited to):
 -VS Code
 -Node
 
+## Deployment
+App is deployed on netlify link: https://jere-eeephase-1capstone.netlify.app/
+
 Open terminal and type:
 ```
 git clone https://github.com/jere-eee/phase-1-capstone-project.git
