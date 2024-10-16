@@ -1,0 +1,194 @@
+{
+  "videos": [
+    {
+      "id": "1",
+      "title": "Learn JavaScript in 10 Minutes",
+      "description": "A crash course on the basics of JavaScript.",
+      "channelId": 1,
+      "channelName": "CodeAcademy",
+      "likes": 120,
+      "views": 1500,
+      "thumbnail": "https://i.pinimg.com/236x/e3/54/b3/e354b3db1b382114d4fa49743eef5a55.jpg"
+    },
+    {
+      "id": "2",
+      "title": "CSS Grid Tutorial",
+      "description": "Master CSS Grid with this step-by-step tutorial.",
+      "channelId": 2,
+      "channelName": "CSS Mastery",
+      "likes": 98,
+      "views": 1300,
+      "thumbnail": "https://i.pinimg.com/236x/f4/84/78/f48478a0fc251d2e9593d9836943de5c.jpg"
+    },
+    {
+      "id": "3",
+      "title": "React for Beginners",
+      "description": "An introduction to React.js for beginners.",
+      "channelId": 3,
+      "channelName": "Reactify",
+      "likes": 210,
+      "views": 2000,
+      "thumbnail": "https://i.pinimg.com/236x/d2/9f/af/d29faf3e1eeb089201b42e5a0fdbfc2b.jpg"
+    },
+    {
+      "id": "4",
+      "title": "10 Tips to Improve Your Coding Skills",
+      "description": "Practical tips to become a better programmer.",
+      "channelId": 4,
+      "channelName": "Dev Tips",
+      "likes": 156,
+      "views": 1800,
+      "thumbnail": "https://i.pinimg.com/enabled/236x/4b/bc/5c/4bbc5c7f9365f56b36f3806bb40a1b9a.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Node.js in Depth",
+      "description": "A comprehensive guide to Node.js.",
+      "channelId": 5,
+      "channelName": "Node Nook",
+      "likes": 178,
+      "views": 1600,
+      "thumbnail": "https://i.pinimg.com/736x/e3/a2/49/e3a2498d2fabe3948c98e784f7f51808.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Building REST APIs with Express",
+      "description": "Learn how to create RESTful APIs using Express.js.",
+      "channelId": 3,
+      "channelName": "Reactify",
+      "likes": 215,
+      "views": 2100,
+      "thumbnail": "https://i.pinimg.com/236x/c0/00/14/c0001470b4d61d031cb55c1cca07be46.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Flexbox vs Grid: When to Use Which",
+      "description": "A comparison of Flexbox and Grid in CSS.",
+      "channelId": 2,
+      "channelName": "CSS Mastery",
+      "likes": 105,
+      "views": 1700,
+      "thumbnail": "https://i.pinimg.com/736x/16/ff/b6/16ffb68653c862a7d880833e3654eca0.jpg"
+    },
+    {
+      "id": "8",
+      "title": "JavaScript ES6 Features",
+      "description": "A quick overview of new JavaScript ES6 features.",
+      "channelId": 1,
+      "channelName": "CodeAcademy",
+      "likes": 250,
+      "views": 2500,
+      "thumbnail": "https://i.pinimg.com/236x/15/fa/07/15fa0734ef0090f60990a8485ca4aa02.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Async Programming in JavaScript",
+      "description": "A deep dive into async programming with callbacks, promises, and async/await.",
+      "channelId": 5,
+      "channelName": "Node Nook",
+      "likes": 195,
+      "views": 1950,
+      "thumbnail": "https://i.pinimg.com/236x/b2/09/42/b20942ef14c27bd24061f77f9d77aeae.jpg"
+    },
+    {
+      "id": "10",
+      "title": "How to Deploy a Node.js App",
+      "description": "Step-by-step guide to deploying your Node.js app.",
+      "channelId": 5,
+      "channelName": "Node Nook",
+      "likes": 180,
+      "views": 1750,
+      "thumbnail": "https://i.pinimg.com/236x/c0/92/0e/c0920e88de7c723f40561575f84f7a9b.jpg"
+    },
+    {
+      "id": "11",
+      "title": "Understanding the DOM in JavaScript",
+      "description": "A tutorial on how to manipulate the DOM with JavaScript.",
+      "channelId": 4,
+      "channelName": "Dev Tips",
+      "likes": 205,
+      "views": 2200,
+      "thumbnail": "https://i.pinimg.com/236x/0e/4f/dc/0e4fdce8ac22e09688c580e5bc4dcd7d.jpg"
+    },
+    {
+      "id": "12",
+      "title": "Vue.js Crash Course",
+      "description": "A beginner's guide to Vue.js framework.",
+      "channelId": 6,
+      "channelName": "VuePro",
+      "likes": 90,
+      "views": 1250,
+      "thumbnail": "https://i.pinimg.com/736x/ae/17/4a/ae174a393975c803f7579fdf14332494.jpg"
+    },
+    {
+      "id": "13",
+      "title": "Python vs JavaScript: Which Should You Learn?",
+      "description": "A comparison of Python and JavaScript for web development.",
+      "channelId": 1,
+      "channelName": "CodeAcademy",
+      "likes": 220,
+      "views": 2400,
+      "thumbnail": "https://i.pinimg.com/236x/69/38/e9/6938e9c9230e95af3d9237073d76d8ff.jpg"
+    },
+    {
+      "id": "14",
+      "title": "Master Git and GitHub",
+      "description": "A complete guide to using Git and GitHub for version control.",
+      "channelId": 7,
+      "channelName": "Git Guru",
+      "likes": 245,
+      "views": 2700,
+      "thumbnail": "https://i.pinimg.com/236x/ba/86/e5/ba86e5778488fb7f4717ca113ef7170f.jpg"
+    },
+    {
+      "id": "15",
+      "title": "Debugging JavaScript Like a Pro",
+      "description": "Tips and tools for effectively debugging JavaScript code.",
+      "channelId": 1,
+      "channelName": "CodeAcademy",
+      "likes": 135,
+      "views": 1450,
+      "thumbnail": "https://i.pinimg.com/236x/ac/8c/5a/ac8c5aa4e1939ae8e33bdc5cb6da120d.jpg"
+    }
+  ],
+  "channels": [
+    {
+      "id": "1",
+      "name": "CodeAcademy",
+      "subscribers": 50000
+    },
+    {
+      "id": "2",
+      "name": "CSS Mastery",
+      "subscribers": 30000
+    },
+    {
+      "id": "3",
+      "name": "Reactify",
+      "subscribers": 40000
+    },
+    {
+      "id": "4",
+      "name": "Dev Tips",
+      "subscribers": 25000
+    },
+    {
+      "id": "5",
+      "name": "Node Nook",
+      "subscribers": 22000
+    },
+    {
+      "id": "6",
+      "name": "VuePro",
+      "subscribers": 15000
+    },
+    {
+      "id": "7",
+      "name": "Git Guru",
+      "subscribers": 32000
+    }
+  ],
+  "watchLater": [],
+  "likes": [],
+  "subscriptions": []
+}

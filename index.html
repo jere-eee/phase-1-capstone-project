@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e6755db976.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="toggle-switch">
+            <label class="switch-label">
+                <input type="checkbox" class="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <span class="toggle-msg">To switch between light and dark modes, press "l" or "d" respectively. </span>
+
+        <h1 class="youtube">Youtube</h1>
+        
+        <ul class="list-items">
+            <li class="home"><i class="fa-solid fa-house"></i> Home</li>
+            <li class="later"><i class="fa-solid fa-clock"></i> Watch Later</li>
+            <li class="liked"><i class="fa-solid fa-heart"></i> Liked Videos</li>
+            <li class="subscriptionss"><i class="fa-solid fa-circle-play"></i> Subscriptions</li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="videos">
+        </div>
+        <div class="previewer">
+
+        </div>
+        <div class="empty">
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
+<style>
+    .previewer {
+        display: none;
+    }
+
+    .empty {
+        display: none;
+    }
+</style>
