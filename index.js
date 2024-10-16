@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // GET videos and render to DOM onload
     fetch("http://localhost:3000/videos")
         .then(res => res.json())
         .then((videos) => {
             vidRenderer(videos);
         })
-
+    
+    // Event listener for home tab
     document.querySelector('.home').addEventListener('click', () => {
+        // GET all videos and render
         fetch('http://localhost:3000/videos')
             .then(res => res.json())
             .then((videos) => {
@@ -14,22 +17,27 @@ document.addEventListener('DOMContentLoaded', () => {
             })
     })
 
+    // Event listener for watch later tab
     document.querySelector('.later').addEventListener('click', () => {
         watchLaterRenderer();
     })
 
+    // Event listener for liked videos tab
     document.querySelector('.liked').addEventListener('click', () => {
         likesRenderer();
     });
 
+    // Event listener for subscriptions tab
     document.querySelector('.subscriptionss').addEventListener('click', () => {
         subscriptionsRenderer();
     })
 
+    // Event listener for theme checkbox slider
     document.querySelector('.checkbox').addEventListener('change', function() {
         toggle();
     })
 
+    // Event listener for theme checkbox slider ("keydown")
     document.addEventListener('keydown', (e) => {
         let activeEl = document.activeElement
         let isInput = activeEl.tagName === "INPUT" || activeEl.tagName === "TEXTAREA" || activeEl.isContentEditable
@@ -47,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const content = document.querySelector(".content");
 
+// renderer function for videos in subscriptions tab
 function subscriptionsRenderer() {
     fetch('http://localhost:3000/subscriptions')
         .then(res => res.json())
@@ -255,6 +264,7 @@ function subscriptionsRenderer() {
         });
 }
 
+// renderer function for videos in liked videos tab
 function likesRenderer() {
     fetch('http://localhost:3000/likes')
         .then(res => res.json())
@@ -455,6 +465,7 @@ function likesRenderer() {
         });
 }
 
+// renderer function for videos in watch later tab
 function watchLaterRenderer() {
     fetch('http://localhost:3000/watchLater')
         .then(res => res.json())
@@ -655,6 +666,7 @@ function watchLaterRenderer() {
         });
 }
 
+// function changing background color on change of checkbox
 function toggle() {
     let body = document.querySelector('body');
     let content = document.querySelector('.content');
@@ -674,6 +686,7 @@ function toggle() {
     }
 }
 
+// function to show div when no videos are in home, subscriptions or watch later endpoints
 function emptyDivFunc() {
     let emptyDiv = document.querySelector('.empty');
     if (!emptyDiv) {
@@ -690,6 +703,7 @@ function emptyDivFunc() {
     document.querySelector('.videos').appendChild(emptyDiv);
 }
 
+// renderer function for videos in home tab
 function vidRenderer(videos) {
     const videoContainer = document.querySelector('.videos');
 
