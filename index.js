@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const url = "https://jere-eee.github.io/phase-1-capstone-project/db.json"
     
     // GET videos and render to DOM onload
-    fetch(`${url}/videos`)
+    fetch(`${url}`)
         .then(res => res.json())
         .then((videos) => {
             vidRenderer(videos);
