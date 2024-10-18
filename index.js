@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const url = "https://raw.githubusercontent.com/jere-eee/phase-1-capstone-project/refs/heads/main/db.json"
+    const url = "https://jere-eee.github.io/phase-1-capstone-project/db.json"
     
     // GET videos and render to DOM onload
     fetch(`${url}/videos`)
