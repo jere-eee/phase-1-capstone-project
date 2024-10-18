@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // GET videos and render to DOM onload
-    fetch("http://localhost:3000/videos")
+    fetch("https://jere-eeephase-1capstone.netlify.app/videos")
         .then(res => res.json())
         .then((videos) => {
             vidRenderer(videos);
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event listener for home tab
     document.querySelector('.home').addEventListener('click', () => {
         // GET all videos and render
-        fetch('http://localhost:3000/videos')
+        fetch('https://jere-eeephase-1capstone.netlify.app/videos')
             .then(res => res.json())
             .then((videos) => {
                 document.querySelector('.videos').innerHTML = ''
@@ -57,7 +57,7 @@ const content = document.querySelector(".content");
 
 // renderer function for videos in subscriptions tab
 function subscriptionsRenderer() {
-    fetch('http://localhost:3000/subscriptions')
+    fetch('https://jere-eeephase-1capstone.netlify.app/subscriptions')
         .then(res => res.json())
         .then((videos) => {
             console.log(videos);
@@ -96,7 +96,7 @@ function subscriptionsRenderer() {
                         }
                         previewer.style.display = "flex";
                         previewer.textContent = '';
-                        fetch(`http://localhost:3000/videos/${vid.id}`)
+                        fetch(`https://jere-eeephase-1capstone.netlify.app/videos/${vid.id}`)
                             .then((r) => r.json())
                             .then((vid) => {
                                 let videoContent = document.createElement("div");
@@ -133,7 +133,7 @@ function subscriptionsRenderer() {
                                     document.querySelector('.subscribe').removeEventListener('click', subscribeHandler);
                                 }
                                 unsubscribeHandler = () => {
-                                    fetch(`http://localhost:3000/subscriptions/${vid.id}`, {
+                                    fetch(`https://jere-eeephase-1capstone.netlify.app/subscriptions/${vid.id}`, {
                                         method: "DELETE",
                                         headers: {
                                             "Content-Type": "application/json"
@@ -163,7 +163,7 @@ function subscriptionsRenderer() {
                                     document.querySelector('.like').removeEventListener('click', likeHandler);
                                 }
                                 likeHandler = () => {
-                                    fetch('http://localhost:3000/likes', {
+                                    fetch('https://jere-eeephase-1capstone.netlify.app/likes', {
                                         method: "POST",
                                         headers: {
                                             "Content-Type": "application/json"
@@ -183,7 +183,7 @@ function subscriptionsRenderer() {
                                     document.querySelector('.like').removeEventListener('click', likeHandler);
                                 }
                                 unlikeHandler = () => {
-                                    fetch(`http://localhost:3000/likes/${vid.id}`, {
+                                    fetch(`https://jere-eeephase-1capstone.netlify.app/likes/${vid.id}`, {
                                         method: "DELETE",
                                         headers: {
                                             "Content-Type": "application/json"
@@ -214,7 +214,7 @@ function subscriptionsRenderer() {
                                     document.querySelector('.watch-later').removeEventListener('click', laterHandler);
                                 }
                                 laterHandler = () => {
-                                    fetch('http://localhost:3000/watchLater', {
+                                    fetch('https://jere-eeephase-1capstone.netlify.app/watchLater', {
                                         method: "POST",
                                         headers: {
                                             "Content-Type": "application/json"
@@ -233,7 +233,7 @@ function subscriptionsRenderer() {
                                     document.querySelector('.watch-later').removeEventListener('click', laterHandler);
                                 }
                                 unlaterHandler = () => {
-                                    fetch(`http://localhost:3000/watchLater/${vid.id}`, {
+                                    fetch(`https://jere-eeephase-1capstone.netlify.app/watchLater/${vid.id}`, {
                                         method: "DELETE",
                                         headers: {
                                             "Content-Type": "application/json"
@@ -266,7 +266,7 @@ function subscriptionsRenderer() {
 
 // renderer function for videos in liked videos tab
 function likesRenderer() {
-    fetch('http://localhost:3000/likes')
+    fetch('https://jere-eeephase-1capstone.netlify.app/likes')
         .then(res => res.json())
         .then((videos) => {
             console.log(videos);
@@ -305,7 +305,7 @@ function likesRenderer() {
                         }
                         previewer.style.display = "flex";
                         previewer.textContent = '';
-                        fetch(`http://localhost:3000/videos/${vid.id}`)
+                        fetch(`https://jere-eeephase-1capstone.netlify.app/videos/${vid.id}`)
                             .then((r) => r.json())
                             .then((vid) => {
                                 let videoContent = document.createElement("div");
@@ -343,7 +343,7 @@ function likesRenderer() {
                                     document.querySelector('.subscribe').removeEventListener('click', subscribeHandler);
                                 }
                                 subscribeHandler = () => {
-                                    fetch('http://localhost:3000/subscriptions', {
+                                    fetch('https://jere-eeephase-1capstone.netlify.app/subscriptions', {
                                         method: "POST",
                                         headers: {
                                             "Content-Type": "application/json"
@@ -362,7 +362,7 @@ function likesRenderer() {
                                     document.querySelector('.subscribe').removeEventListener('click', subscribeHandler);
                                 }
                                 unsubscribeHandler = () => {
-                                    fetch(`http://localhost:3000/subscriptions/${vid.id}`, {
+                                    fetch(`https://jere-eeephase-1capstone.netlify.app/subscriptions/${vid.id}`, {
                                         method: "DELETE",
                                         headers: {
                                             "Content-Type": "application/json"
@@ -386,7 +386,7 @@ function likesRenderer() {
                                     document.querySelector('.like').removeEventListener('click', likeHandler);
                                 }
                                 unlikeHandler = () => {
-                                    fetch(`http://localhost:3000/likes/${vid.id}`, {
+                                    fetch(`https://jere-eeephase-1capstone.netlify.app/likes/${vid.id}`, {
                                         method: "DELETE",
                                         headers: {
                                             "Content-Type": "application/json"
@@ -416,7 +416,7 @@ function likesRenderer() {
                                     document.querySelector('.watch-later').removeEventListener('click', laterHandler);
                                 }
                                 laterHandler = () => {
-                                    fetch('http://localhost:3000/watchLater', {
+                                    fetch('https://jere-eeephase-1capstone.netlify.app/watchLater', {
                                         method: "POST",
                                         headers: {
                                             "Content-Type": "application/json"
@@ -435,7 +435,7 @@ function likesRenderer() {
                                     document.querySelector('.watch-later').removeEventListener('click', laterHandler);
                                 }
                                 unlaterHandler = () => {
-                                    fetch(`http://localhost:3000/watchLater/${vid.id}`, {
+                                    fetch(`https://jere-eeephase-1capstone.netlify.app/watchLater/${vid.id}`, {
                                         method: "DELETE",
                                         headers: {
                                             "Content-Type": "application/json"
@@ -467,7 +467,7 @@ function likesRenderer() {
 
 // renderer function for videos in watch later tab
 function watchLaterRenderer() {
-    fetch('http://localhost:3000/watchLater')
+    fetch('https://jere-eeephase-1capstone.netlify.app/watchLater')
         .then(res => res.json())
         .then((videos) => {
             console.log(videos);
@@ -506,7 +506,7 @@ function watchLaterRenderer() {
                         }
                         previewer.style.display = "flex";
                         previewer.textContent = '';
-                        fetch(`http://localhost:3000/videos/${vid.id}`)
+                        fetch(`https://jere-eeephase-1capstone.netlify.app/videos/${vid.id}`)
                             .then((r) => r.json())
                             .then((vid) => {
                                 let videoContent = document.createElement("div");
@@ -544,7 +544,7 @@ function watchLaterRenderer() {
                                     document.querySelector('.subscribe').removeEventListener('click', subscribeHandler);
                                 }
                                 subscribeHandler = () => {
-                                    fetch('http://localhost:3000/subscriptions', {
+                                    fetch('https://jere-eeephase-1capstone.netlify.app/subscriptions', {
                                         method: "POST",
                                         headers: {
                                             "Content-Type": "application/json"
@@ -563,7 +563,7 @@ function watchLaterRenderer() {
                                     document.querySelector('.subscribe').removeEventListener('click', subscribeHandler);
                                 }
                                 unsubscribeHandler = () => {
-                                    fetch(`http://localhost:3000/subscriptions/${vid.id}`, {
+                                    fetch(`https://jere-eeephase-1capstone.netlify.app/subscriptions/${vid.id}`, {
                                         method: "DELETE",
                                         headers: {
                                             "Content-Type": "application/json"
@@ -588,7 +588,7 @@ function watchLaterRenderer() {
                                     document.querySelector('.like').removeEventListener('click', likeHandler);
                                 }
                                 likeHandler = () => {
-                                    fetch('http://localhost:3000/likes', {
+                                    fetch('https://jere-eeephase-1capstone.netlify.app/likes', {
                                         method: "POST",
                                         headers: {
                                             "Content-Type": "application/json"
@@ -608,7 +608,7 @@ function watchLaterRenderer() {
                                     document.querySelector('.like').removeEventListener('click', likeHandler);
                                 }
                                 unlikeHandler = () => {
-                                    fetch(`http://localhost:3000/likes/${vid.id}`, {
+                                    fetch(`https://jere-eeephase-1capstone.netlify.app/likes/${vid.id}`, {
                                         method: "DELETE",
                                         headers: {
                                             "Content-Type": "application/json"
@@ -633,7 +633,7 @@ function watchLaterRenderer() {
                                     document.querySelector('.watch-later').removeEventListener('click', unlaterHandler);
                                 }
                                 unlaterHandler = () => {
-                                    fetch(`http://localhost:3000/watchLater/${vid.id}`, {
+                                    fetch(`https://jere-eeephase-1capstone.netlify.app/watchLater/${vid.id}`, {
                                         method: "DELETE",
                                         headers: {
                                             "Content-Type": "application/json"
@@ -738,7 +738,7 @@ function vidRenderer(videos) {
             }
             previewer.style.display = "flex";
             previewer.textContent = '';
-            fetch(`http://localhost:3000/videos/${vid.id}`)
+            fetch(`https://jere-eeephase-1capstone.netlify.app/videos/${vid.id}`)
                 .then((r) => r.json())
                 .then((vid) => {
                     let videoContent = document.createElement("div");
@@ -776,7 +776,7 @@ function vidRenderer(videos) {
                         document.querySelector('.subscribe').removeEventListener('click', subscribeHandler);
                     }
                     subscribeHandler = () => {
-                        fetch('http://localhost:3000/subscriptions', {
+                        fetch('https://jere-eeephase-1capstone.netlify.app/subscriptions', {
                             method: "POST",
                             headers: {
                                 "Content-Type": "application/json"
@@ -795,7 +795,7 @@ function vidRenderer(videos) {
                         document.querySelector('.subscribe').removeEventListener('click', subscribeHandler);
                     }
                     unsubscribeHandler = () => {
-                        fetch(`http://localhost:3000/subscriptions/${vid.id}`, {
+                        fetch(`https://jere-eeephase-1capstone.netlify.app/subscriptions/${vid.id}`, {
                             method: "DELETE",
                             headers: {
                                 "Content-Type": "application/json"
@@ -820,7 +820,7 @@ function vidRenderer(videos) {
                         document.querySelector('.like').removeEventListener('click', likeHandler);
                     }
                     likeHandler = () => {
-                        fetch('http://localhost:3000/likes', {
+                        fetch('https://jere-eeephase-1capstone.netlify.app/likes', {
                             method: "POST",
                             headers: {
                                 "Content-Type": "application/json"
@@ -841,7 +841,7 @@ function vidRenderer(videos) {
                         document.querySelector('.like').removeEventListener('click', likeHandler);
                     }
                     unlikeHandler = () => {
-                        fetch(`http://localhost:3000/likes/${vid.id}`, {
+                        fetch(`https://jere-eeephase-1capstone.netlify.app/likes/${vid.id}`, {
                             method: "DELETE",
                             headers: {
                                 "Content-Type": "application/json"
@@ -867,7 +867,7 @@ function vidRenderer(videos) {
                         document.querySelector('.watch-later').removeEventListener('click', laterHandler);
                     }
                     laterHandler = () => {
-                        fetch('http://localhost:3000/watchLater', {
+                        fetch('https://jere-eeephase-1capstone.netlify.app/watchLater', {
                             method: "POST",
                             headers: {
                                 "Content-Type": "application/json"
@@ -886,7 +886,7 @@ function vidRenderer(videos) {
                         document.querySelector('.watch-later').removeEventListener('click', laterHandler);
                     }
                     unlaterHandler = () => {
-                        fetch(`http://localhost:3000/watchLater/${vid.id}`, {
+                        fetch(`https://jere-eeephase-1capstone.netlify.app/watchLater/${vid.id}`, {
                             method: "DELETE",
                             headers: {
                                 "Content-Type": "application/json"
